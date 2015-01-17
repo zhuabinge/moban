@@ -1,0 +1,1140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
+    <meta content='text/html;charset=utf-8' http-equiv='content-type'>
+    <meta content='' name='description'>
+    <link href='assets/images/meta_icons/favicon.ico' rel='shortcut icon' type='image/x-icon'>
+    <!-- / START - page related stylesheets [optional] -->
+    
+    <!-- / END - page related stylesheets [optional] -->
+    <!-- / bootstrap [required] -->
+    <link href="http://libs.useso.com/js/bootstrap/3.0.0/css/bootstrap.min.css" media="all" rel="stylesheet" type="text/css" />
+    <!-- / theme file [required] -->
+    <link href="assets/stylesheets/light-theme.css" media="all" id="color-settings-body-color" rel="stylesheet" type="text/css" />
+    <!-- / coloring file [optional] (if you are going to use custom contrast color) -->
+    <link href="assets/stylesheets/theme-colors.css" media="all" rel="stylesheet" type="text/css" />
+    <!--[if lt IE 9]>
+      <script src="http://libs.useso.com/js/html5shiv/3.6.2/html5shiv.min.js" type="text/javascript"></script>
+      <script src="http://libs.useso.com/js/respond.js/1.3.0/respond.min.js" type="text/javascript"></script>
+    <![endif]-->
+  </head>
+  <body class='contrast-fb'>
+    <header>
+      <nav class='navbar navbar-default'>
+        <a class='navbar-brand' href='index.html'>
+          <img width="81" height="21" class="logo" alt="Flatty" src="assets/images/logo.svg" />
+          <img width="21" height="21" class="logo-xs" alt="Flatty" src="assets/images/logo_xs.svg" />
+        </a>
+        <a class='toggle-nav btn pull-left' href='#'>
+          <i class='icon-reorder'></i>
+        </a>
+        <ul class='nav'>
+          <li class='dropdown light only-icon'>
+            <a class='dropdown-toggle' data-toggle='dropdown' href='#'>
+              <i class='icon-cog'></i>
+            </a>
+            <ul class='dropdown-menu color-settings'>
+              <li class='color-settings-body-color'>
+                <div class='color-title'>标题加粗</div>
+                <a href='#'>
+                  test
+                  <small>(default)</small>
+                </a>
+                <a href='#'>
+                  Dark
+                </a>
+              </li>
+              <li class='divider'></li>
+              <li class='color-settings-contrast-color'>
+                <div class='color-title'>标题加粗</div>
+                <a data-change-to="contrast-red" href="#">
+                  <i class='icon-cog text-red'></i>
+                  Red
+                  <small>(default)</small>
+                </a>
+                <a data-change-to="contrast-blue" href="#">
+                  <i class='icon-cog text-blue'></i>
+                  Blue
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class='dropdown medium only-icon widget'>
+            <a class='dropdown-toggle' data-toggle='dropdown' href='#'>
+              <i class='icon-rss'></i>
+              <div class='label'>5</div>
+            </a>
+            <ul class='dropdown-menu'>
+              <li>
+                <a href='#'>
+                  <div class='widget-body'>
+                    <div class='pull-left icon'>
+                      <i class='icon-user text-success'></i>
+                    </div>
+                    <div class='pull-left text'>
+                      John Doe signed up
+                      <small class='text-muted'>just now</small>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class='divider'></li>
+              <li>
+                <a href='#'>
+                  <div class='widget-body'>
+                    <div class='pull-left icon'>
+                      <i class='icon-inbox text-error'></i>
+                    </div>
+                    <div class='pull-left text'>
+                      New Order #002
+                      <small class='text-muted'>3 minutes ago</small>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class='widget-footer'>
+                <a href='#'>All notifications</a>
+              </li>
+            </ul>
+          </li>
+          <li class='dropdown dark user-menu'>
+            <a class='dropdown-toggle' data-toggle='dropdown' href='grid.html#'>
+              <img width="23" height="23" alt="Mila Kunis" src="assets/images/avatar.jpg" />
+              <span class='user-name'>Mila Kunis</span>
+              <b class='caret'></b>
+            </a>
+            <ul class='dropdown-menu'>
+              <li>
+                <a href='user_profile.html'>
+                  <i class='icon-user'></i>
+                  Profile
+                </a>
+              </li>
+              <li>
+                <a href='user_profile.html'>
+                  <i class='icon-cog'></i>
+                  Settings
+                </a>
+              </li>
+              <li class='divider'></li>
+              <li>
+                <a href='sign_in.html'>
+                  <i class='icon-signout'></i>
+                  Sign out
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <form action='search_results.html' class='navbar-form navbar-right hidden-xs' method='get'>
+          <button class='btn btn-link icon-search' name='button' type='submit'></button>
+          <div class='form-group'>
+            <input value="" class="form-control" placeholder="Search..." autocomplete="off" id="q_header" name="q" type="text" />
+          </div>
+        </form>
+      </nav>
+    </header>
+    <div id='wrapper'>
+      <div id='main-nav-bg'></div>
+      <nav id='main-nav'>
+        <div class='navigation'>
+          <div class='search'>
+            <form action='search_results.html' method='get'>
+              <div class='search-wrapper'>
+                <input value="" class="search-query form-control" placeholder="Search..." autocomplete="off" name="q" type="text" />
+                <button class='btn btn-link icon-search' name='button' type='submit'></button>
+              </div>
+            </form>
+          </div>
+          <ul class='nav nav-stacked'>
+            <li class='active'>
+              <a href='index.html'>
+                <i class='icon-dashboard'></i>
+                <span>Dashboard</span>
+              </a>
+            </li>
+            <li class=''>
+                      <a class="dropdown-collapse" href="#"><i class='icon-edit'></i>
+              <span>Forms</span>
+              <i class='icon-angle-down angle-down'></i>
+              </a>
+      
+              <ul class='nav nav-stacked'>
+                <li class=''>
+                  <a href='form_styles.html'>
+                    <i class='icon-caret-right'></i>
+                    <span>Form styles and features</span>
+                  </a>
+                </li>
+                <li class=''>
+                  <a href='form_components.html'>
+                    <i class='icon-caret-right'></i>
+                    <span>Form components</span>
+                  </a>
+                </li>
+                <li class=''>
+                  <a href='validations.html'>
+                    <i class='icon-caret-right'></i>
+                    <span>Validations</span>
+                  </a>
+                </li>
+                <li class=''>
+                  <a href='wizard.html'>
+                    <i class='icon-caret-right'></i>
+                    <span>Wizard</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a class='dropdown-collapse ' href='#'>
+                <i class='icon-tint'></i>
+                <span>UI Elements & Widgets</span>
+                <i class='icon-angle-down angle-down'></i>
+              </a>
+              <ul class='nav nav-stacked'>
+                <li class=''>
+                  <a href='ui_elements.html'>
+                    <i class='icon-caret-right'></i>
+                    <span>UI Elements</span>
+                  </a>
+                </li>
+                <li class=''>
+                  <a href='widgets.html'>
+                    <i class='icon-caret-right'></i>
+                    <span>Widgets</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class=''>
+              <a href='buttons_and_icons.html'>
+                <i class='icon-star'></i>
+                <span>Buttons & Icons</span>
+              </a>
+            </li>
+            <li>
+              <a class='dropdown-collapse ' href='#'>
+                <i class='icon-cogs'></i>
+                <span>Components</span>
+                <i class='icon-angle-down angle-down'></i>
+              </a>
+              <ul class='nav nav-stacked'>
+                <li class=''>
+                  <a href='charts.html'>
+                    <i class='icon-bar-chart'></i>
+                    <span>Charts</span>
+                  </a>
+                </li>
+                <li class=''>
+                  <a href='address_book.html'>
+                    <i class='icon-envelope'></i>
+                    <span>Address book</span>
+                  </a>
+                </li>
+                <li class=''>
+                  <a href='chats.html'>
+                    <i class='icon-comments'></i>
+                    <span>Chats</span>
+                  </a>
+                </li>
+                <li class=''>
+                  <a href='filetrees.html'>
+                    <i class='icon-list-ul'></i>
+                    <span>File trees</span>
+                  </a>
+                </li>
+                <li class=''>
+                  <a href='fileupload.html'>
+                    <i class='icon-file'></i>
+                    <span>Fileupload</span>
+                  </a>
+                </li>
+                <li class=''>
+                  <a href='todo.html'>
+                    <i class='icon-list-alt'></i>
+                    <span>Todo list</span>
+                  </a>
+                </li>
+                <li class=''>
+                  <a href='wysiwyg.html'>
+                    <i class='icon-paste'></i>
+                    <span>WYSIWYG</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class=''>
+              <a href='tables.html'>
+                <i class='icon-table'></i>
+                <span>Tables</span>
+              </a>
+            </li>
+            <li class=''>
+              <a href='grid.html'>
+                <i class='icon-th'></i>
+                <span>Grid</span>
+              </a>
+            </li>
+            <li class=''>
+              <a href='type.html'>
+                <i class='icon-font'></i>
+                <span>Typography</span>
+              </a>
+            </li>
+            <li class=''>
+              <a href='calendar.html'>
+                <i class='icon-calendar'></i>
+                <span>Calendar</span>
+              </a>
+            </li>
+            <li>
+              <a class='dropdown-collapse ' href='#'>
+                <i class='icon-book'></i>
+                <span>Example pages</span>
+                <i class='icon-angle-down angle-down'></i>
+              </a>
+              <ul class='nav nav-stacked'>
+                <li class=''>
+                  <a href='invoice.html'>
+                    <i class='icon-money'></i>
+                    <span>Invoice</span>
+                  </a>
+                </li>
+                <li class=''>
+                  <a href='gallery.html'>
+                    <i class='icon-picture'></i>
+                    <span>Gallery</span>
+                  </a>
+                </li>
+                <li class=''>
+                  <a href='timeline.html'>
+                    <i class='icon-time'></i>
+                    <span>Timeline</span>
+                  </a>
+                </li>
+                <li class=''>
+                  <a href='pricing_tables.html'>
+                    <i class='icon-table'></i>
+                    <span>Pricing tables</span>
+                  </a>
+                </li>
+                <li class=''>
+                  <a href='user_profile.html'>
+                    <i class='icon-user'></i>
+                    <span>User profile</span>
+                  </a>
+                </li>
+                <li class=''>
+                  <a href='err404.html' target='_blank'>
+                    <i class='icon-question-sign'></i>
+                    <span>404 Error</span>
+                  </a>
+                </li>
+                <li class=''>
+                  <a href='err500.html' target='_blank'>
+                    <i class='icon-cogs'></i>
+                    <span>500 Error</span>
+                  </a>
+                </li>
+                <li class=''>
+                  <a href='sign_in.html' target='_blank'>
+                    <i class='icon-signin'></i>
+                    <span>Sign in</span>
+                  </a>
+                </li>
+                <li class=''>
+                  <a href='faq.html'>
+                    <i class='icon-bullhorn'></i>
+                    <span>FAQ</span>
+                  </a>
+                </li>
+                <li class=''>
+                  <a href='orders.html'>
+                    <i class='icon-inbox'></i>
+                    <span>Orders</span>
+                  </a>
+                </li>
+                <li class=''>
+                  <a href='search_results.html'>
+                    <i class='icon-search'></i>
+                    <span>Search results</span>
+                  </a>
+                </li>
+                <li class=''>
+                  <a href='blank.html'>
+                    <i class='icon-circle-blank'></i>
+                    <span>Blank page</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a class='dropdown-collapse ' href='#'>
+                <i class='icon-cog'></i>
+                <span>Layouts</span>
+                <i class='icon-angle-down angle-down'></i>
+              </a>
+              <ul class='nav nav-stacked'>
+                <li class=''>
+                  <a href='closed_navigation.html'>
+                    <i class='icon-caret-right'></i>
+                    <span>Closed navigation</span>
+                  </a>
+                </li>
+                <li class=''>
+                  <a href='fixed_header.html'>
+                    <i class='icon-caret-right'></i>
+                    <span>Fixed header</span>
+                  </a>
+                </li>
+                <li class=''>
+                  <a href='fixed_navigation.html'>
+                    <i class='icon-caret-right'></i>
+                    <span>Fixed navigation</span>
+                  </a>
+                </li>
+                <li class=''>
+                  <a href='fixed_navigation_and_header.html'>
+                    <i class='icon-caret-right'></i>
+                    <span>Fixed navigation & header</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class=''>
+              <a href='email_templates.html'>
+                <i class='icon-mail-reply'></i>
+                <span>Email templates</span>
+              </a>
+            </li>
+            <li>
+              <a class='dropdown-collapse' href='#'>
+                <i class='icon-folder-open-alt'></i>
+                <span>Four level dropdown</span>
+                <i class='icon-angle-down angle-down'></i>
+              </a>
+              <ul class='nav nav-stacked'>
+                <li>
+                  <a class='dropdown-collapse' href='#'>
+                    <i class='icon-caret-right'></i>
+                    <span>Second level</span>
+                    <i class='icon-angle-down angle-down'></i>
+                  </a>
+                  <ul class='nav nav-stacked'>
+                    <li>
+                      <a class='dropdown-collapse' href='#'>
+                        <i class='icon-caret-right'></i>
+                        <span>Third level</span>
+                        <i class='icon-angle-down angle-down'></i>
+                      </a>
+                      <ul class='nav nav-stacked'>
+                        <li>
+                          <a href='#'>
+                            <i class='icon-caret-right'></i>
+                            <span>Fourth level</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href='#'>
+                            <i class='icon-caret-right'></i>
+                            <span>Another fourth level</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <section id='content'>
+        <div class='container'>
+          <div class='row' id='content-wrapper'>
+            <div class='col-xs-12'>
+              <div class='row'>
+                <div class='col-sm-12'>
+                  <div class='page-header'>
+                    <h1 class='pull-left'>
+                      <i class='icon-tint'></i>
+                      <span>Widgets</span>
+                    </h1>
+                    <div class='pull-right'>
+                      <ul class='breadcrumb'>
+                        <li>
+                          <a href='index.html'>
+                            <i class='icon-bar-chart'></i>
+                          </a>
+                        </li>
+                        <li class='separator'>
+                          <i class='icon-angle-right'></i>
+                        </li>
+                        <li>
+                          UI Elements & Widgets
+                        </li>
+                        <li class='separator'>
+                          <i class='icon-angle-right'></i>
+                        </li>
+                        <li class='active'>Widgets</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class='group-header group-header-first'>
+                <div class='row'>
+                  <div class='col-sm-6 col-sm-offset-3'>
+                    <div class='text-center'>
+                      <h2>Quick navigation</h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class='row box box-transparent'>
+                <div class='col-xs-4 col-sm-2'>
+                  <div class='box-quick-link blue-background'>
+                    <a href='widgets.html#'>
+                      <div class='header'>
+                        <div class='icon-comments'></div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class='col-xs-4 col-sm-2'>
+                  <div class='box-quick-link green-background'>
+                    <a href='widgets.html#'>
+                      <div class='header'>
+                        <div class='icon-star'></div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class='col-xs-4 col-sm-2'>
+                  <div class='box-quick-link orange-background'>
+                    <a href='widgets.html#'>
+                      <div class='header'>
+                        <div class='icon-magic'></div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class='col-xs-4 col-sm-2'>
+                  <div class='box-quick-link purple-background'>
+                    <a href='widgets.html#'>
+                      <div class='header'>
+                        <div class='icon-eye-open'></div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class='col-xs-4 col-sm-2'>
+                  <div class='box-quick-link red-background'>
+                    <a href='orders.html'>
+                      <div class='header'>
+                        <div class='icon-inbox'></div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class='col-xs-4 col-sm-2'>
+                  <div class='box-quick-link muted-background'>
+                    <a href='widgets.html#'>
+                      <div class='header'>
+                        <div class='icon-refresh'></div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class='text-center'>
+                <small class='text-muted'>OR</small>
+              </div>
+              <br>
+              <div class='row box box-transparent'>
+                <div class='col-xs-4 col-sm-2'>
+                  <div class='box-quick-link blue-background'>
+                    <a href='widgets.html#'>
+                      <div class='header'>
+                        <div class='icon-comments'></div>
+                      </div>
+                      <div class='content'>Comments</div>
+                    </a>
+                  </div>
+                </div>
+                <div class='col-xs-4 col-sm-2'>
+                  <div class='box-quick-link green-background'>
+                    <a href='widgets.html#'>
+                      <div class='header'>
+                        <div class='icon-star'></div>
+                      </div>
+                      <div class='content'>Veeeery long title of this quick link</div>
+                    </a>
+                  </div>
+                </div>
+                <div class='col-xs-4 col-sm-2'>
+                  <div class='box-quick-link orange-background'>
+                    <a href='widgets.html#'>
+                      <div class='header'>
+                        <div class='icon-magic'></div>
+                      </div>
+                      <div class='content'>Magic</div>
+                    </a>
+                  </div>
+                </div>
+                <div class='col-xs-4 col-sm-2'>
+                  <div class='box-quick-link purple-background'>
+                    <a href='widgets.html#'>
+                      <div class='header'>
+                        <div class='icon-eye-open'></div>
+                      </div>
+                      <div class='content'>Show</div>
+                    </a>
+                  </div>
+                </div>
+                <div class='col-xs-4 col-sm-2'>
+                  <div class='box-quick-link red-background'>
+                    <a href='orders.html'>
+                      <div class='header'>
+                        <div class='icon-inbox'></div>
+                      </div>
+                      <div class='content'>Orders</div>
+                    </a>
+                  </div>
+                </div>
+                <div class='col-xs-4 col-sm-2'>
+                  <div class='box-quick-link muted-background'>
+                    <a href='widgets.html#'>
+                      <div class='header'>
+                        <div class='icon-refresh'></div>
+                      </div>
+                      <div class='content'>Spinning</div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class='group-header'>
+                <div class='row'>
+                  <div class='col-sm-6 col-sm-offset-3'>
+                    <div class='text-center'>
+                      <h2>Statistics</h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class='row'>
+                <div class='col-sm-6'>
+                  <div class='box'>
+                    <div class='box-header'>
+                      <div class='title'>
+                        <div class='icon-inbox'></div>
+                        Orders
+                      </div>
+                      <div class='actions'>
+                        <a class="btn box-remove btn-xs btn-link" href="widgets.html#"><i class='icon-remove'></i>
+                        </a>
+                        
+                        <a class="btn box-collapse btn-xs btn-link" href="widgets.html#"><i></i>
+                        </a>
+                      </div>
+                    </div>
+                    <div class='row'>
+                      <div class='col-sm-6'>
+                        <div class='box-content box-statistic'>
+                          <h3 class='title text-error'>191</h3>
+                          <small>New</small>
+                          <div class='text-error icon-inbox align-right'></div>
+                        </div>
+                        <div class='box-content box-statistic'>
+                          <h3 class='title text-warning'>311</h3>
+                          <small>In process</small>
+                          <div class='text-warning icon-check align-right'></div>
+                        </div>
+                        <div class='box-content box-statistic'>
+                          <h3 class='title text-info'>3</h3>
+                          <small>Pending</small>
+                          <div class='text-info icon-time align-right'></div>
+                        </div>
+                      </div>
+                      <div class='col-sm-6'>
+                        <div class='box-content box-statistic red-background'>
+                          <h3 class='title text-primary'>3</h3>
+                          <small>Shipped</small>
+                          <div class='text-primary icon-truck align-right'></div>
+                        </div>
+                        <div class='box-content box-statistic green-background'>
+                          <h3 class='title text-success'>981</h3>
+                          <small>Completed</small>
+                          <div class='text-success icon-flag align-right'></div>
+                        </div>
+                        <div class='box-content box-statistic muted-background'>
+                          <h3 class='title text-muted'>0</h3>
+                          <small>Canceled</small>
+                          <div class='text-muted icon-remove align-right'></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class='col-sm-3'>
+                  <div class='box'>
+                    <div class='box-header'>
+                      <div class='title'>
+                        <i class='icon-group'></i>
+                        Visitors
+                      </div>
+                    </div>
+                    <div class='row'>
+                      <div class='col-sm-12'>
+                        <div class='box-content box-statistic text-right'>
+                          <h3 class='title text-error'>9100</h3>
+                          <small>Unique</small>
+                          <div class='text-error icon-user align-left'></div>
+                        </div>
+                        <div class='box-content box-statistic text-right'>
+                          <h3 class='title text-warning'>41 000</h3>
+                          <small>Pageviews</small>
+                          <div class='text-warning icon-book align-left'></div>
+                        </div>
+                        <div class='box-content box-statistic text-right'>
+                          <h3 class='title text-primary'>12:21</h3>
+                          <small>Average time</small>
+                          <div class='text-primary icon-time align-left'></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class='col-sm-3'>
+                  <div class='box'>
+                    <div class='box-header'>
+                      <div class='title'>
+                        <i class='icon-comments'></i>
+                        Comments
+                      </div>
+                    </div>
+                    <div class='row'>
+                      <div class='col-sm-12'>
+                        <div class='box-content box-statistic'>
+                          <h3 class='title text-error'>91</h3>
+                          <small>New</small>
+                          <div class='text-error icon-plus align-right'></div>
+                        </div>
+                        <div class='box-content box-statistic'>
+                          <h3 class='title text-success'>1</h3>
+                          <small>Approved</small>
+                          <div class='text-success icon-ok align-right'></div>
+                        </div>
+                        <div class='box-content box-statistic'>
+                          <h3 class='title text-info'>123</h3>
+                          <small>Pending</small>
+                          <div class='text-info icon-time align-right'></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class='group-header'>
+                <div class='row'>
+                  <div class='col-sm-6 col-sm-offset-3'>
+                    <div class='text-center'>
+                      <h2>Boxes</h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class='row'>
+                <div class='col-sm-4'>
+                  <div class='box box-nomargin'>
+                    <div class='box-header'>
+                      <div class='title'>Classic box</div>
+                      <div class='actions'>
+                        <a class="btn box-remove btn-xs btn-link" href="widgets.html#"><i class='icon-remove'></i>
+                        </a>
+                        
+                        <a class="btn box-collapse btn-xs btn-link" href="widgets.html#"><i></i>
+                        </a>
+                      </div>
+                    </div>
+                    <div class='box-content'>
+                      Quo et est at harum quod optio esse aut deleniti magnam dolore unde dolore nihil velit ea sed doloremque quia
+                    </div>
+                  </div>
+                </div>
+                <div class='col-sm-4'>
+                  <div class='box box-nomargin'>
+                    <div class='box-header red-background'>
+                      <div class='title'>Colored</div>
+                      <div class='actions'>
+                        <div class='btn-group'>
+                          <a class='btn btn-white dropdown-toggle' data-toggle='dropdown' style='margin-bottom:5px'>
+                            Dropdown
+                            <span class='caret'></span>
+                          </a>
+                          <ul class='dropdown-menu pull-right'>
+                            <li>
+                              <a href='widgets.html#'>Action</a>
+                            </li>
+                            <li>
+                              <a href='widgets.html#'>Another action</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class='box-content'>
+                      Quo et est at harum quod optio esse aut deleniti magnam dolore unde dolore nihil velit ea sed doloremque quia
+                    </div>
+                  </div>
+                </div>
+                <div class='col-sm-4'>
+                  <div class='box box-bordered box-nomargin'>
+                    <div class='box-header blue-background'>
+                      <div class='title'>Bordered</div>
+                      <div class='actions'>
+                        <a class="btn box-remove btn-xs btn-link" href="widgets.html#"><i class='icon-remove'></i>
+                        </a>
+                        
+                        <a class="btn box-collapse btn-xs btn-link" href="widgets.html#"><i></i>
+                        </a>
+                      </div>
+                    </div>
+                    <div class='box-content'>
+                      Quo et est at harum quod optio esse aut deleniti magnam dolore unde dolore nihil velit ea sed doloremque quia
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr class='hr-double'>
+              <div class='row'>
+                <div class='col-sm-4'>
+                  <div class='box box-collapsed box-nomargin'>
+                    <div class='box-header orange-background'>
+                      <div class='title'>Collapsed</div>
+                      <div class='actions'>
+                        <a class="btn box-remove btn-xs btn-link" href="widgets.html#"><i class='icon-remove'></i>
+                        </a>
+                        
+                        <a class="btn box-collapse btn-xs btn-link" href="widgets.html#"><i></i>
+                        </a>
+                      </div>
+                    </div>
+                    <div class='box-content'>
+                      Quo et est at harum quod optio esse aut deleniti magnam dolore unde dolore nihil velit ea sed doloremque quia
+                    </div>
+                  </div>
+                </div>
+                <div class='col-sm-4'>
+                  <div class='box box-nomargin'>
+                    <div class='box-header'>
+                      <div class='title'>With label</div>
+                      <div class='actions'>
+                        <span class='label label-success'>
+                          31%
+                          <i class='icon-arrow-up'></i>
+                        </span>
+                      </div>
+                    </div>
+                    <div class='box-content'>
+                      Quo et est at harum quod optio esse aut deleniti magnam dolore unde dolore nihil velit ea sed doloremque quia
+                    </div>
+                  </div>
+                </div>
+                <div class='col-sm-4'>
+                  <div class='box box-bordered box-nomargin'>
+                    <div class='box-header purple-background'>
+                      <div class='title'>Scrollable</div>
+                      <div class='actions'>
+                        <a class="btn box-remove btn-xs btn-link" href="widgets.html#"><i class='icon-remove'></i>
+                        </a>
+                        
+                        <a class="btn box-collapse btn-xs btn-link" href="widgets.html#"><i></i>
+                        </a>
+                      </div>
+                    </div>
+                    <div class='box-content'>
+                      <div class='scrollable' data-scrollable-height='78' data-scrollable-start='top'>
+                        Aut ut fugiat qui suscipit alias sed est voluptatem necessitatibus quis in omnis ad sed dolores laborum laborum fugit ad qui et autem ratione accusantium sit error velit repudiandae a fugit autem et corrupti et est quos id quia dolorem deleniti qui libero quas odit sit nisi quos voluptatem sit quia minus nulla reprehenderit nihil aut ipsum magnam blanditiis non praesentium facilis id commodi repellat ratione atque ut voluptas iure est iusto dignissimos autem voluptate id quis quam sequi sunt est nobis possimus rerum modi reprehenderit ullam vel cum est soluta molestias debitis atque sapiente explicabo natus aut suscipit et ex ex debitis ea dolorem dolorem omnis odit occaecati vel debitis tempore occaecati odit eum nemo et totam nulla earum deserunt tenetur inventore impedit nulla reprehenderit qui ea non quia ipsam explicabo qui ex perspiciatis mollitia dolores maxime voluptas accusantium atque sint sint dolores nihil aut impedit pariatur deserunt ut velit maxime molestiae deleniti at quia quo et quos numquam laudantium in a numquam consectetur quae necessitatibus explicabo ut aspernatur consequatur alias eveniet esse possimus eum voluptas placeat est expedita illo hic atque rerum quibusdam et neque eligendi vero corrupti eos odio asperiores consequuntur est cupiditate quia et est aliquid neque ex explicabo ipsam aut repellendus id et quas molestiae qui magni iste fugiat et doloremque ea autem ut rerum quod eos aut est amet nostrum magnam quas velit adipisci vel impedit placeat porro assumenda ipsum aut pariatur earum et velit omnis non ea et suscipit voluptate voluptatum accusamus possimus numquam expedita possimus ducimus facere sed necessitatibus cum vel culpa autem voluptatem esse consequatur consequatur distinctio sapiente repudiandae vero accusantium adipisci est dolorem laborum est vel totam quis ut minus est quis mollitia deleniti fuga maiores dolor praesentium at eos atque sit reprehenderit quas quos nobis voluptatem aut non consequuntur velit earum adipisci vitae cum sit et deserunt voluptas quos dolores itaque sit vel dicta doloremque quam dolorem ut numquam est nemo porro exercitationem occaecati ipsa qui eaque voluptatem unde ab amet magnam inventore modi reprehenderit quo sint omnis eos nostrum ut delectus doloremque laboriosam rem voluptatem dolorem qui esse impedit accusamus perspiciatis laborum assumenda voluptatem minus perspiciatis et illo vel quia illum vel consequatur culpa dicta suscipit delectus veniam natus aut veniam soluta repudiandae eligendi dolore vel quos necessitatibus animi blanditiis eos consequatur ipsam quisquam provident est ipsa earum consequatur sapiente sed molestiae saepe tempore iste sint ea cum alias ut aliquam quis dolorum officia ut consectetur blanditiis nemo a rerum qui nihil exercitationem in impedit odio esse sit aut quia sed unde qui et illum eaque perspiciatis velit enim laudantium et rerum voluptatem suscipit eum nihil porro et magnam qui voluptatum temporibus esse expedita ex similique atque at qui quod et facilis aut voluptatem qui quis odio optio dicta rerum aut nesciunt nihil quia eum vitae qui blanditiis voluptatem reiciendis ullam quaerat minus soluta nihil expedita voluptas sed eos fugit perferendis atque aperiam dolor nemo assumenda earum magni id rerum ad omnis odit deserunt soluta numquam quaerat sint unde libero dolor aut atque quos reiciendis iure assumenda mollitia officia commodi rerum sed impedit iste vitae ipsum adipisci eaque cumque iste et repudiandae fuga veritatis odio mollitia deserunt consequatur fugit iste provident odit reiciendis doloribus laborum qui necessitatibus qui nam et ut in beatae quia alias cupiditate dignissimos ut in quae non aut et nemo qui est voluptate aut ut aspernatur a sit maiores reprehenderit quam impedit eaque in necessitatibus accusamus dolorem sed consequuntur velit ipsum sequi pariatur dolorem minus enim laudantium nostrum non et atque harum facilis et consequatur alias quia adipisci veritatis est ex aut tempore minus mollitia rem sed voluptatem incidunt est non eos possimus amet dolores sint est ut eveniet ipsum sit necessitatibus aut rem vitae est sit modi perspiciatis tempore id enim molestiae excepturi consequatur quae quibusdam voluptatem ad quae iure rem quibusdam omnis nisi facere dolore explicabo quia sit eos sunt aut blanditiis et et debitis rem aliquid occaecati libero laborum sint tempora corporis commodi quia commodi pariatur sed sit rem ut quae facere eum qui reiciendis enim placeat non ea excepturi cum eligendi autem inventore et non enim alias nisi perferendis consectetur recusandae et corrupti incidunt asperiores accusantium omnis molestias esse eos voluptas nihil et quae eos cum earum occaecati repellat repudiandae impedit expedita minima atque eos deleniti eum enim ducimus sequi quia exercitationem distinctio fugit velit soluta fuga iure necessitatibus officiis facere distinctio quasi voluptatem eos necessitatibus eaque beatae voluptatibus pariatur debitis aliquam quos blanditiis qui asperiores quod repudiandae ipsam necessitatibus quae et non ipsam facere quae vero non voluptatem voluptatem est id facilis neque quam et sequi est repudiandae quae blanditiis velit ducimus aperiam consectetur perferendis labore distinctio et nisi consequatur et nobis iste cum culpa laudantium eum aut quia eaque non est quo dolorem et magni eum adipisci beatae et laboriosam cum ut qui blanditiis architecto odio aliquam soluta corrupti hic ut deserunt omnis qui exercitationem numquam sed rem et et unde et assumenda quis deleniti nihil sit aut rerum dolores rem non doloremque illo vel et maiores autem voluptatum itaque eum molestias consequuntur harum est ea libero qui ratione adipisci ratione blanditiis saepe ad nam ex tempore dolores doloribus dolorem inventore sapiente alias sint recusandae ad incidunt et consequatur aut quam fugit quae est distinctio non aut ipsum optio et quae rerum sapiente quia non sint non iusto tempora vitae soluta doloremque eveniet sint distinctio doloribus quia autem odio omnis asperiores molestias deserunt dolorum temporibus dolor numquam blanditiis est magnam quod distinctio deserunt sint voluptas neque eaque debitis esse voluptatem maiores aut culpa praesentium recusandae qui nisi temporibus sed placeat illo voluptatem cupiditate quae id est iure voluptate molestias est accusantium iusto sit occaecati inventore voluptatem debitis nisi deserunt est enim ullam tempore dolorem repellendus sit quos aliquid omnis recusandae sit quae vero voluptatem nihil earum laudantium voluptatem eaque qui saepe rerum voluptas ex natus sed dolor praesentium earum error alias beatae deserunt debitis magni repellat quod optio aut repellat enim hic modi et modi soluta eum dolor
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr class='hr-double'>
+              <div class='row'>
+                <div class='col-sm-4'>
+                  <div class='box box-nomargin'>
+                    <div class='box-header'>
+                      <div class='title'>
+                        <i class='icon-book'></i>
+                        With icon & padding
+                      </div>
+                      <div class='actions'>
+                        <a class="btn box-remove btn-xs btn-link" href="widgets.html#"><i class='icon-remove'></i>
+                        </a>
+                        
+                        <a class="btn box-collapse btn-xs btn-link" href="widgets.html#"><i></i>
+                        </a>
+                      </div>
+                    </div>
+                    <div class='box-content box-padding'>
+                      Quo et est at harum quod optio esse aut deleniti magnam dolore unde dolore nihil velit ea sed doloremque quia
+                    </div>
+                  </div>
+                </div>
+                <div class='col-sm-4'>
+                  <div class='box box-transparent box-nomargin'>
+                    <div class='box-header'>
+                      <div class='title'>Transparent</div>
+                      <div class='actions'>
+                        <a class="btn box-remove btn-xs btn-link" href="widgets.html#"><i class='icon-remove'></i>
+                        </a>
+                        
+                        <a class="btn box-collapse btn-xs btn-link" href="widgets.html#"><i></i>
+                        </a>
+                      </div>
+                    </div>
+                    <div class='box-content'>
+                      Quo et est at harum quod optio esse aut deleniti magnam dolore unde dolore nihil velit ea sed doloremque quia
+                    </div>
+                  </div>
+                </div>
+                <div class='col-sm-4'>
+                  <div class='box box-bordered box-nomargin' style='margin-bottom: 0;'>
+                    <div class='box-header blue-background'>
+                      <div class='title'>Double padding</div>
+                      <div class='actions'>
+                        <a class="btn box-remove btn-xs btn-link" href="widgets.html#"><i class='icon-remove'></i>
+                        </a>
+                        
+                        <a class="btn box-collapse btn-xs btn-link" href="widgets.html#"><i></i>
+                        </a>
+                      </div>
+                    </div>
+                    <div class='box-content box-double-padding'>
+                      Quo et est at harum quod optio esse aut deleniti magnam dolore unde dolore nihil velit ea sed doloremque quia
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr class='hr-double'>
+              <div class='row'>
+                <div class='col-sm-4'>
+                  <div class='box box-nomargin'>
+                    <div class='box-header box-header-small red-background'>
+                      <div class='title'>
+                        <i class='icon-resize-vertical'></i>
+                        Small box
+                      </div>
+                      <div class='actions'>
+                        <a class="btn box-remove btn-xs btn-link" href="widgets.html#"><i class='icon-remove'></i>
+                        </a>
+                        
+                        <a class="btn box-collapse btn-xs btn-link" href="widgets.html#"><i></i>
+                        </a>
+                      </div>
+                    </div>
+                    <div class='box-content box-padding'>
+                      Quo et est at harum quod optio esse aut deleniti magnam dolore unde dolore nihil velit ea sed doloremque quia
+                    </div>
+                  </div>
+                </div>
+                <div class='col-sm-4'>
+                  <div class='box box-bordered blue-border box-nomargin'>
+                    <div class='box-header box-header-small blue-background'>
+                      <div class='title'>Small & Bordered</div>
+                      <div class='actions'>
+                        <a class="btn box-remove btn-xs btn-link" href="widgets.html#"><i class='icon-remove'></i>
+                        </a>
+                        
+                        <a class="btn box-collapse btn-xs btn-link" href="widgets.html#"><i></i>
+                        </a>
+                      </div>
+                    </div>
+                    <div class='box-content'>
+                      Quo et est at harum quod optio esse aut deleniti magnam dolore unde dolore nihil velit ea sed doloremque quia
+                    </div>
+                  </div>
+                </div>
+                <div class='col-sm-4'>
+                  <div class='box box-bordered box-nomargin' style='margin-bottom: 0;'>
+                    <div class='box-header box-header-small purple-background'>
+                      <div class='title'>Small & Scrollable</div>
+                      <div class='actions'>
+                        <a class="btn box-remove btn-xs btn-link" href="widgets.html#"><i class='icon-remove'></i>
+                        </a>
+                        
+                        <a class="btn box-collapse btn-xs btn-link" href="widgets.html#"><i></i>
+                        </a>
+                      </div>
+                    </div>
+                    <div class='box-content'>
+                      <div class='scrollable' data-scrollable-height='200' data-scrollable-start='top'>
+                        Expedita facere consequatur eaque corrupti dolore voluptatibus deserunt sed ut nemo officiis quia aut aut repellat et nesciunt ducimus quisquam ipsam dolor molestiae sed quibusdam est dolore dolores corporis id reiciendis labore nulla saepe eum doloribus ullam eos tempora natus qui iure praesentium ut commodi nisi optio quia et nemo ut adipisci autem et perspiciatis consectetur quo et quia delectus aspernatur non cumque consequatur aut veritatis ipsam ab repellat consequatur cupiditate facere consequatur voluptatum quia et amet provident magni libero omnis officia accusamus voluptatem minima error velit nulla animi est sunt natus consequuntur molestias ut perferendis enim exercitationem totam explicabo qui veritatis cum dicta ea laudantium consequuntur modi neque aut nulla autem voluptates pariatur a qui est dolor qui dolorum magni maiores quidem ut quod pariatur et eos inventore consequatur ex nostrum quos perspiciatis a perspiciatis quis cumque id maxime maxime placeat alias id qui ipsa laudantium rerum itaque ad fugiat quia autem sit dolorum qui quas necessitatibus voluptate accusantium quia fuga distinctio officia atque saepe quae et modi accusantium consequatur voluptatem enim voluptatem quis laboriosam suscipit ipsam dolores quaerat maiores omnis ab dicta voluptas incidunt eius sit laudantium recusandae consequatur eveniet perferendis dolorum ut ipsum quis modi alias pariatur nulla amet porro a molestias quae aut aperiam sit inventore aperiam nobis repellat vitae nemo et laudantium rerum explicabo qui deserunt nesciunt et ex nesciunt explicabo nemo quo omnis laudantium fugiat deleniti autem sed consequatur repellat ad aut facilis porro ducimus vero voluptas voluptatum accusamus doloremque deserunt rerum enim quibusdam exercitationem quas aut magnam quia illo maxime mollitia recusandae soluta sapiente ea quos quae dolorem deserunt dignissimos nihil sapiente et voluptate ut perspiciatis hic et eos ut totam repudiandae dolorem qui sit mollitia doloremque quo nihil dolorem ut blanditiis magni totam sint dicta eius alias ea animi ex molestias illum repellendus ut expedita necessitatibus similique aut dolor voluptas eum blanditiis ducimus ut voluptatem ad laboriosam et corrupti iure incidunt nam velit laborum dolorem eaque nobis beatae quia consequatur veniam placeat ipsam nihil corporis itaque deleniti ea quam dolores delectus velit vel animi doloribus perspiciatis aut ea voluptatibus dolorem voluptas perferendis voluptatem eum asperiores eveniet aliquid ipsum itaque aut porro at autem et quia eius ducimus neque ut dicta consequuntur sit dicta neque modi veniam maxime perspiciatis maiores et enim ullam earum consectetur facilis reiciendis inventore rem ipsam assumenda doloremque autem iste beatae et est corporis laboriosam ut atque dolor nemo at quis provident ut sit iusto aspernatur repudiandae incidunt accusantium eum vero cumque mollitia voluptas et mollitia reprehenderit omnis est voluptatem suscipit blanditiis possimus dolor voluptatem iste aspernatur voluptatem voluptatum facere nostrum ipsa quisquam quis tempore qui quos quidem nulla quam facere explicabo eos cum quidem voluptas amet quis dolores est unde nesciunt consequatur dolor optio quod aut ipsam eligendi sit ex voluptatem aut sunt est ratione voluptates omnis eaque vel sed ea neque sunt repudiandae et et et excepturi beatae id nostrum doloremque dolor sunt sunt neque consequuntur doloribus iste ut quam impedit error voluptates quia voluptatum quae magnam doloribus repellendus possimus possimus assumenda perferendis iure illo laboriosam nihil possimus cumque perferendis unde quia sit eligendi eos id tempora ipsam voluptate ipsam repellendus facilis nihil at qui aut aut qui corrupti ipsum et corrupti necessitatibus voluptatum nihil eum reiciendis doloribus minus voluptatem sed dolorem accusantium minus autem ipsa enim libero iste nihil voluptatum illum quo quis deserunt nobis dolorem molestiae soluta sit consectetur suscipit autem nam iusto qui velit a beatae labore illo dolorum enim eum ut dicta enim perferendis quos velit asperiores qui dolor commodi quod enim dolor qui asperiores eos et corporis quas odio id ut voluptate ut exercitationem facilis sunt animi sunt asperiores eos dolorem molestiae maiores omnis corrupti illum voluptas quia exercitationem suscipit veniam possimus debitis unde deleniti tempore modi ut voluptatem veniam voluptas optio dolorem voluptatibus officiis facilis dicta amet deserunt possimus dolorum deserunt amet optio quia nisi eius ut voluptatem nesciunt asperiores incidunt consequatur eveniet et fugit excepturi ut enim illum sed est labore rerum maxime itaque distinctio cupiditate quia et mollitia veniam deserunt sequi velit non aut autem eum quia est est nihil nihil ut nostrum eius molestiae eum corrupti quia recusandae error quo sit perspiciatis aut fuga officia qui delectus ut quia voluptates qui est corporis aut necessitatibus laudantium aperiam tempore aspernatur magni nulla dolore pariatur saepe assumenda cumque qui iure ut sequi laboriosam accusantium voluptates architecto illum non sint blanditiis nihil quas molestias numquam et odio totam expedita animi rerum corporis odio nisi et quis architecto quia ea est corrupti maxime similique officia a et et temporibus nemo sit expedita tempora iste modi a eaque omnis omnis sequi sed veniam eos tempora est quisquam inventore consequuntur consequatur quas consequuntur et aut perferendis laboriosam quia sapiente sed quia aut ad incidunt voluptatem quos ipsam voluptatibus est nihil fuga omnis laboriosam consequatur aut commodi in veniam ab asperiores asperiores amet at maiores et ipsum aut voluptatem sunt facere sunt sed repellat corrupti at odio cumque nulla inventore non quidem molestiae tempore animi aspernatur mollitia quia officiis sit est aut est eius in id harum temporibus et temporibus dolor nesciunt quia voluptatem sunt aperiam dolores deserunt adipisci sunt rem aut id rerum adipisci aliquid perspiciatis consequuntur quasi ea dolores temporibus aperiam officia velit possimus consequatur aut dolor quae nulla quo eos labore voluptas quia et voluptas eligendi dolores qui quos dignissimos eum perspiciatis quo eligendi ea et expedita est voluptatum sint quia odit facilis omnis et ipsa quis at quis expedita nam sed velit voluptates consequuntur dolore occaecati aut adipisci vel et placeat quas et consequatur deserunt id et totam asperiores perferendis facere inventore ipsum voluptatem fuga vel aliquam asperiores sint incidunt reprehenderit quo et facere laborum error voluptatem aut in iure id inventore assumenda debitis sapiente hic alias eum suscipit labore non repudiandae aperiam quia dolor asperiores ipsam voluptas voluptatem dignissimos nihil commodi natus culpa sint at et eos iste aut dolorem qui iusto omnis quod voluptas et impedit id velit laboriosam fugit est odit ratione et laudantium in nam debitis quam
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr class='hr-double'>
+              <div class='row'>
+                <div class='col-sm-4'>
+                  <div class='box box-nomargin'>
+                    <div class='box-header box-header-small green-background'>
+                      <div class='title'>
+                        <i class='icon-resize-vertical'></i>
+                        With toolbox
+                      </div>
+                      <div class='actions'>
+                        <a class="btn box-remove btn-xs btn-link" href="widgets.html#"><i class='icon-remove'></i>
+                        </a>
+                        
+                        <a class="btn box-collapse btn-xs btn-link" href="widgets.html#"><i></i>
+                        </a>
+                      </div>
+                    </div>
+                    <div class='box-content'>
+                      <div class='box-toolbox box-toolbox-top'>
+                        <div class='pull-left'>
+                          <a class='btn btn-white'>
+                            <i class='icon-bold'></i>
+                          </a>
+                          <a class='btn btn-white'>
+                            <i class='icon-italic'></i>
+                          </a>
+                        </div>
+                        <div class='pull-right'>
+                          <a class='btn btn-white'>
+                            <i class='icon-eye-open'></i>
+                          </a>
+                        </div>
+                      </div>
+                      Quo et est at harum quod optio esse aut deleniti magnam dolore unde dolore nihil velit ea sed doloremque quia
+                    </div>
+                  </div>
+                </div>
+                <div class='col-sm-4'>
+                  <div class='box box-bordered muted-border box-nomargin'>
+                    <div class='box-header box-header-small orange-background'>
+                      <div class='title'>Bottom toolbox</div>
+                      <div class='actions'>
+                        <a class="btn box-remove btn-xs btn-link" href="widgets.html#"><i class='icon-remove'></i>
+                        </a>
+                        
+                        <a class="btn box-collapse btn-xs btn-link" href="widgets.html#"><i></i>
+                        </a>
+                      </div>
+                    </div>
+                    <div class='box-content box-padding'>
+                      Quo et est at harum quod optio esse aut deleniti magnam dolore unde dolore nihil velit ea sed doloremque quia
+                      <div class='box-toolbox box-toolbox-bottom'>
+                        <div class='pull-left'>
+                          <a class='btn btn-white'>
+                            <i class='icon-bold'></i>
+                          </a>
+                          <a class='btn btn-white'>
+                            <i class='icon-italic'></i>
+                          </a>
+                        </div>
+                        <div class='pull-right'>
+                          <a class='btn btn-white'>
+                            <i class='icon-eye-open'></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class='col-sm-4'>
+                  <div class='box box-bordered box-nomargin'>
+                    <div class='box-header box-header-small muted-background'>
+                      <div class='title'>Top & Bottom toolbox</div>
+                      <div class='actions'>
+                        <a class="btn box-remove btn-xs btn-link" href="widgets.html#"><i class='icon-remove'></i>
+                        </a>
+                        
+                        <a class="btn box-collapse btn-xs btn-link" href="widgets.html#"><i></i>
+                        </a>
+                      </div>
+                    </div>
+                    <div class='box-content box-double-padding'>
+                      <div class='box-toolbox box-toolbox-top'>
+                        <div class='pull-left'>
+                          <a class='btn btn-white'>
+                            <i class='icon-bold'></i>
+                          </a>
+                          <a class='btn btn-white'>
+                            <i class='icon-italic'></i>
+                          </a>
+                        </div>
+                        <div class='pull-right'>
+                          <a class='btn btn-white'>
+                            <i class='icon-eye-open'></i>
+                          </a>
+                        </div>
+                      </div>
+                      Quo et est at harum quod optio esse aut deleniti magnam dolore unde dolore nihil velit ea sed doloremque quia
+                      <div class='box-toolbox box-toolbox-bottom'>
+                        <div class='pull-left'>
+                          <a class='btn btn-white'>
+                            <i class='icon-bold'></i>
+                          </a>
+                          <a class='btn btn-white'>
+                            <i class='icon-italic'></i>
+                          </a>
+                        </div>
+                        <div class='pull-right'>
+                          <a class='btn btn-white'>
+                            <i class='icon-eye-open'></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <footer id='footer'>
+            <div class='footer-wrapper'>
+              <div class='row'>
+                <div class='col-sm-6 text'>
+                  Copyright © 2013 Your Project Name
+                </div>
+                <div class='col-sm-6 buttons'>
+                  <a class="btn btn-link" href="index.html">Preview</a>
+                  <a class="btn btn-link" href="https://wrapbootstrap.com/theme/flatty-flat-administration-template-WB0P6NR1N">Purchase</a>
+                </div>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </section>
+    </div>
+    <!-- / jquery [required] -->
+    <script src="http://libs.useso.com/js/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
+    <!-- / jquery mobile (for touch events) -->
+    <script src="assets/javascripts/jquery/jquery.mobile.custom.min.js" type="text/javascript"></script>
+    <!-- / jquery migrate (for compatibility with new jquery) [required] -->
+    <script src="assets/javascripts/jquery/jquery-migrate.min.js" type="text/javascript"></script>
+    <!-- / jquery ui -->
+    <script src="http://libs.useso.com/js/jqueryui/1.10.2/jquery-ui.min.js" type="text/javascript"></script>
+    <!-- / jQuery UI Touch Punch -->
+    <script src="assets/javascripts/plugins/jquery_ui_touch_punch/jquery.ui.touch-punch.min.js" type="text/javascript"></script>
+    <!-- / bootstrap [required] -->
+    <script src="http://libs.useso.com/js/bootstrap/3.0.0/js/bootstrap.min.js" type="text/javascript"></script>
+    <!-- / modernizr -->
+    <script src="assets/javascripts/plugins/modernizr/modernizr.min.js" type="text/javascript"></script>
+    <!-- / retina -->
+    <script src="assets/javascripts/plugins/retina/retina.js" type="text/javascript"></script>
+    <!-- / theme file [required] -->
+    <script src="assets/javascripts/theme.js" type="text/javascript"></script>
+    <!-- / START - page related files and scripts [optional] -->
+    <script src="assets/javascripts/plugins/slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script>
+    <!-- / END - page related files and scripts [optional] -->
+  </body>
+</html>
